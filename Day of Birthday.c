@@ -40,17 +40,17 @@ main()
 	}
 	
 	
-//	strcpy(mon.day[0],"Sunday");
-//	strcpy(mon.day[1],"Monday");
-//	strcpy(mon.day[2],"Tuesday");
-//	strcpy(mon.day[3],"Wednesday");
-//	strcpy(mon.day[4],"Thursday");
-//	strcpy(mon.day[5],"Friday");
-//	strcpy(mon.day[6],"Saturday");
-//	
-//	for(i=0;i<7;i++)
-//	{
-//		printf("Day %d is %c\n",i+1,mon.day[i]);
-//	}
-//	
+	strcpy(mon.day[0],"Sunday");
+	strcpy(mon.day[1],"Monday");
+	strcpy(mon.day[2],"Tuesday");
+	strcpy(mon.day[3],"Wednesday");
+	strcpy(mon.day[4],"Thursday");
+	strcpy(mon.day[5],"Friday");
+	strcpy(mon.day[6],"Saturday");
+	
+	for(i=0;i<7;i++)
+	{
+		printf("Day %d is %c\n",i+1,mon.day[i]);
+	}
+	
 }
