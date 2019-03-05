@@ -20,12 +20,17 @@ main()
 	mon.date[9]=31;
 	mon.date[10]=30;
 	mon.date[11]=31;
-	if(year%400==0 && year%100==0)
+	if(year%100==0 && year%400==0)
 	mon.date[1]=29;
-	else if(year%4==0)
-	mon.date[1]=29;
-	else
+	else if(year%100==0 && year%400!=0)
 	mon.date[1]=mon.date[1];
+	else
+	{
+	if(year%4==0)
+	{
+	mon.date[1]=29;
+	}
+	}
 	
 	
 	
@@ -34,17 +39,18 @@ main()
 		printf("This year Month %d have %d days\n",i+1,mon.date[i]);
 	}
 	
-	mon.day[0]="Sunday";
-	mon.day[1]="Monday";
-	mon.day[2]="Tuesday";
-	mon.day[3]="Wednesday";
-	mon.day[4]="Thursday";
-	mon.day[5]="Friday";
-	mon.day[6]="Saturday";
 	
-	for(i=0;i<7;i++)
-	{
-		printf("Day %d is %c\n",i+1,mon.day[i]);
-	}
-	
+//	strcpy(mon.day[0],"Sunday");
+//	strcpy(mon.day[1],"Monday");
+//	strcpy(mon.day[2],"Tuesday");
+//	strcpy(mon.day[3],"Wednesday");
+//	strcpy(mon.day[4],"Thursday");
+//	strcpy(mon.day[5],"Friday");
+//	strcpy(mon.day[6],"Saturday");
+//	
+//	for(i=0;i<7;i++)
+//	{
+//		printf("Day %d is %c\n",i+1,mon.day[i]);
+//	}
+//	
 }
