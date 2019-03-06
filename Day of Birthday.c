@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<string.h>
 struct month{
 	int date[12];
-	char day[7];
+	char day[7][16];
 }mon;
 main()
 {
@@ -50,7 +51,7 @@ main()
 	
 	for(i=0;i<7;i++)
 	{
-		printf("Day %d is %c\n",i+1,mon.day[i]);
+		printf("Day %d is %s\n", i + 1, mon.day[i]);
 	}
 	
 }
